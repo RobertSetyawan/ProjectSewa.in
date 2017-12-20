@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.robert.projectsewamobil.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/logofix" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/userlogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textColor="@color/warnatext"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/namelogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:layout_marginLeft="45dp"
+        android:hint="enter your name"
+        android:inputType="text"
+        android:textColor="@color/warnatext"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/warnatext"
+        android:textSize="20dp"
+        android:layout_marginLeft="45dp"
+        android:text="Password"
+        android:layout_above="@+id/passlogin"
+        android:layout_alignLeft="@+id/passlogin"
+        android:layout_alignStart="@+id/passlogin" />
+
+    <EditText
+        android:id="@+id/passlogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="45dp"
+        android:hint="enter your password"
+        android:inputType="textPassword"
+        android:textColor="@color/warnatext"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/login"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/warnatombol"
+        android:textColor="@color/warnatext"
+        android:text="Log in"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="signup"
+        android:text="Belum Punya Akun? Daftar disini"
+        android:textColor="@color/warnatext" />
+
+</LinearLayout>
